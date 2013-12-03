@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+	<title>Style for Datatables</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
+	<link rel="stylesheet" type="text/css" href="css/tipf.css">
+
+	<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="js/jquery.tipf.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function (){
+			$('.tipf').tipf();
+			$('#dataTablef').dataTable({
+		        "sPaginationType": "full_numbers"
+		    });
+		});
+
+		function ViewPopupVendedor(inner, id){
+			$(inner).html('<img src="images/user'+id+'.jpg" width="100"/>');
+		}
+
+	</script>
+	<style type="text/css">
+		* {
+			font-size: 13px;
+		}
+		.divcenter {
+			margin: 0 auto;
+			width: 900px;
+		}
+		a {
+			cursor: pointer;
+			color: #3770bd;
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<div class="divcenter">
+		<table cellpadding="0" cellspacing="0" border="0" class="display" id="dataTablef">
+			<thead>
+				<tr>
+					<th width="120">Action</th>
+					<th>Code</th>
+					<th>Name</th>
+					<th>Date</th>
+					<th>Condition</th>
+					<th>People</th>					
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<a href="#" title="View" class="view tipf"><div class="link"></div></a>
+						<a href="#" title="Edit" class="edit tipf"><div class="link"></div></a>
+						<a href="#" title="Delete" class="delete tipf"><div class="link"></div></a>
+						<a href="#" title="Printer" class="print tipf"><div class="link"></div></a>
+						<a href="#" title="Reload" class="convert tipf"><div class="link"></div></a>
+					</td>
+					<td>1</td>
+					<td>João Pedro da Silva</td>
+					<td>01/01/2015</td>
+					<td>The condition 1</td>
+					<td><a class="info-vendedor tipf" execjs="ViewPopupVendedor(inner, 1)">Fábio Rogério SJ</a></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" title="View" class="view tipf"><div class="link"></div></a>
+						<a href="#" title="Edit" class="edit tipf"><div class="link"></div></a>
+						<a href="#" title="Delete" class="delete tipf"><div class="link"></div></a>
+						<a href="#" title="Printer" class="print tipf"><div class="link"></div></a>
+						<a href="#" title="Reload" class="convert tipf"><div class="link"></div></a>
+					</td>
+					<td>1</td>
+					<td>Luiz da Costa</td>
+					<td>01/01/2015</td>
+					<td>The condition 2</td>
+					<td><a class="info-vendedor tipf" execjs="ViewPopupVendedor(inner, 2)">Anderson Souza</a></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" title="View" class="view tipf"><div class="link"></div></a>
+						<a href="#" title="Edit" class="edit tipf"><div class="link"></div></a>
+						<a href="#" title="Delete" class="delete tipf"><div class="link"></div></a>
+						<a href="#" title="Printer" class="print tipf"><div class="link"></div></a>
+						<a href="#" title="Reload" class="convert tipf"><div class="link"></div></a>
+					</td>
+					<td>3</td>
+					<td>Fábio Rogério SJ</td>
+					<td>01/01/2015</td>
+					<td>The condition 3</td>
+					<td><a class="info-vendedor tipf" execjs="ViewPopupVendedor(inner, 3)">Marta Silva</a></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" title="View" class="view tipf"><div class="link"></div></a>
+						<a href="#" title="Edit" class="edit tipf"><div class="link"></div></a>
+						<a href="#" title="Delete" class="delete tipf"><div class="link"></div></a>
+						<a href="#" title="Printer" class="print tipf"><div class="link"></div></a>
+						<a href="#" title="Reload" class="convert tipf"><div class="link"></div></a>
+					</td>
+					<td>1</td>
+					<td>João Pedro da Silva</td>
+					<td>01/01/2015</td>
+					<td>The condition 1</td>
+					<td><a class="info-vendedor tipf" execjs="ViewPopupVendedor(inner, 1)">Fábio Rogério SJ</a></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" title="View" class="view tipf"><div class="link"></div></a>
+						<a href="#" title="Edit" class="edit tipf"><div class="link"></div></a>
+						<a href="#" title="Delete" class="delete tipf"><div class="link"></div></a>
+						<a href="#" title="Printer" class="print tipf"><div class="link"></div></a>
+						<a href="#" title="Reload" class="convert tipf"><div class="link"></div></a>
+					</td>
+					<td>1</td>
+					<td>Luiz da Costa</td>
+					<td>01/01/2015</td>
+					<td>The condition 2</td>
+					<td><a class="info-vendedor tipf" execjs="ViewPopupVendedor(inner, 2)">Anderson Souza</a></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" title="View" class="view tipf"><div class="link"></div></a>
+						<a href="#" title="Edit" class="edit tipf"><div class="link"></div></a>
+						<a href="#" title="Delete" class="delete tipf"><div class="link"></div></a>
+						<a href="#" title="Printer" class="print tipf"><div class="link"></div></a>
+						<a href="#" title="Reload" class="convert tipf"><div class="link"></div></a>
+					</td>
+					<td>3</td>
+					<td>Fábio Rogério SJ</td>
+					<td>01/01/2015</td>
+					<td>The condition 3</td>
+					<td><a class="info-vendedor tipf" execjs="ViewPopupVendedor(inner, 3)">Marta Silva</a></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" title="View" class="view tipf"><div class="link"></div></a>
+						<a href="#" title="Edit" class="edit tipf"><div class="link"></div></a>
+						<a href="#" title="Delete" class="delete tipf"><div class="link"></div></a>
+						<a href="#" title="Printer" class="print tipf"><div class="link"></div></a>
+						<a href="#" title="Reload" class="convert tipf"><div class="link"></div></a>
+					</td>
+					<td>1</td>
+					<td>João Pedro da Silva</td>
+					<td>01/01/2015</td>
+					<td>The condition 1</td>
+					<td><a class="info-vendedor tipf" execjs="ViewPopupVendedor(inner, 1)">Fábio Rogério SJ</a></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" title="View" class="view tipf"><div class="link"></div></a>
+						<a href="#" title="Edit" class="edit tipf"><div class="link"></div></a>
+						<a href="#" title="Delete" class="delete tipf"><div class="link"></div></a>
+						<a href="#" title="Printer" class="print tipf"><div class="link"></div></a>
+						<a href="#" title="Reload" class="convert tipf"><div class="link"></div></a>
+					</td>
+					<td>1</td>
+					<td>Luiz da Costa</td>
+					<td>01/01/2015</td>
+					<td>The condition 2</td>
+					<td><a class="info-vendedor tipf" execjs="ViewPopupVendedor(inner, 2)">Anderson Souza</a></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" title="View" class="view tipf"><div class="link"></div></a>
+						<a href="#" title="Edit" class="edit tipf"><div class="link"></div></a>
+						<a href="#" title="Delete" class="delete tipf"><div class="link"></div></a>
+						<a href="#" title="Printer" class="print tipf"><div class="link"></div></a>
+						<a href="#" title="Reload" class="convert tipf"><div class="link"></div></a>
+					</td>
+					<td>3</td>
+					<td>Fábio Rogério SJ</td>
+					<td>01/01/2015</td>
+					<td>The condition 3</td>
+					<td><a class="info-vendedor tipf" execjs="ViewPopupVendedor(inner, 3)">Marta Silva</a></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" title="View" class="view tipf"><div class="link"></div></a>
+						<a href="#" title="Edit" class="edit tipf"><div class="link"></div></a>
+						<a href="#" title="Delete" class="delete tipf"><div class="link"></div></a>
+						<a href="#" title="Printer" class="print tipf"><div class="link"></div></a>
+						<a href="#" title="Reload" class="convert tipf"><div class="link"></div></a>
+					</td>
+					<td>1</td>
+					<td>João Pedro da Silva</td>
+					<td>01/01/2015</td>
+					<td>The condition 1</td>
+					<td><a class="info-vendedor tipf" execjs="ViewPopupVendedor(inner, 1)">Fábio Rogério SJ</a></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" title="View" class="view tipf"><div class="link"></div></a>
+						<a href="#" title="Edit" class="edit tipf"><div class="link"></div></a>
+						<a href="#" title="Delete" class="delete tipf"><div class="link"></div></a>
+						<a href="#" title="Printer" class="print tipf"><div class="link"></div></a>
+						<a href="#" title="Reload" class="convert tipf"><div class="link"></div></a>
+					</td>
+					<td>1</td>
+					<td>Luiz da Costa</td>
+					<td>01/01/2015</td>
+					<td>The condition 2</td>
+					<td><a class="info-vendedor tipf" execjs="ViewPopupVendedor(inner, 2)">Anderson Souza</a></td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" title="View" class="view tipf"><div class="link"></div></a>
+						<a href="#" title="Edit" class="edit tipf"><div class="link"></div></a>
+						<a href="#" title="Delete" class="delete tipf"><div class="link"></div></a>
+						<a href="#" title="Printer" class="print tipf"><div class="link"></div></a>
+						<a href="#" title="Reload" class="convert tipf"><div class="link"></div></a>
+					</td>
+					<td>3</td>
+					<td>Fábio Rogério SJ</td>
+					<td>01/01/2015</td>
+					<td>The condition 3</td>
+					<td><a class="info-vendedor tipf" execjs="ViewPopupVendedor(inner, 3)">Marta Silva</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
